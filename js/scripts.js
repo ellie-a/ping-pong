@@ -1,15 +1,14 @@
-var game = function (number)   //check if right
-
-
-
-
-
-
-
-
-
-
-
+var game = function((number) {  //check if right
+  if (number % 3 === 0){
+   return "Ping";
+ };
+ if (number % 5 === 0) {
+   return "Pong"
+ };
+ if (number % 15 ===0) {
+   return "Ping-Pong"
+ }
+});
 
 
 $(document).ready(function(){
