@@ -1,9 +1,7 @@
-debugger;
-
 var game = function(number) {
   var pingPong = [];
 
-  for (i = 1; i < number; i++) {
+  for (i = 1; i <= number; i++) {
 
     if (i % 3 === 0 && i % 5 !== 0){
       pingPong.push("Ping");
@@ -24,13 +22,13 @@ $(document).ready(function() {
 
     event.preventDefault();
 
-    $("#result ul").empty();
+    $("#userOutput ul").empty();
 
     var userInput = parseInt($("#userInput").val());
-    var finals = game(userInput);
+    var results = game(userInput);
 
-    finals.forEach(function(final) {
-      $("#result ul").append("<li>" + final + "</li>")
+    results.forEach(function(result) {
+      $("#userOutput ul").append("<li>" + results + "</li>")
     });
 
   });
