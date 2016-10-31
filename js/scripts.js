@@ -1,21 +1,37 @@
-var game = function((number) {  //check if right
-  if (number % 3 === 0){
-   return "Ping";
- };
- if (number % 5 === 0) {
-   return "Pong"
- };
- if (number % 15 ===0) {
-   return "Ping-Pong"
- }
-});
+debugger;
 
+var game = function(number) {
+  var pingPong = [];
 
-$(document).ready(function(){
-  $("form#value").submit (function(event) {
+  for (i = 1; i < number; i++) {
+
+    if (i % 3 === 0 && i % 5 !== 0){
+      pingPong.push("Ping");
+    } else if (i % 5 === 0 && i & 3 !== 0) {
+      pingPong.push("Pong");
+    } else if (i % 15 === 0 & i !== 0) {
+      pingPong.push("Ping-Pong");
+    } else {
+      pingPong.push(i);
+    }
+  };
+  return pingPong;
+};
+
+$(document).ready(function() {
+
+  $("form#value").submit(function(event) {
+
     event.preventDefault();
-    var number = parseInt($("input#number").val());
-    var result = game(number);
-    $("#result").text(result);
+
+    $("#result ul").empty();
+
+    var userInput = parseInt($("#userInput").val());
+    var finals = game(userInput);
+
+    finals.forEach(function(final) {
+      $("#result ul").append("<li>" + final + "</li>")
+    });
+
   });
 });

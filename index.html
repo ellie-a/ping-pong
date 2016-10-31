@@ -3,10 +3,10 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Ping-Pong</title>
-  </head>s
+  </head>
   <body>
     <div class="container">
       <h1>Bounce, Bounce, Bounce!</h1>
@@ -16,16 +16,16 @@
         <li>Numbers divisible by 5 are replaced with "Pong"</li>
         <li>Numbers divisible by 15 are replaced with "Ping-Pong"</li>
       </ul>
-      <form id="number">
-        <div class="form-group">
+      <form id="userInput">
+
           <label for="value">Enter a number to see!</label>
           <input id="value" type="number">
-        </div>
-        <button type="submit" class="btn">Find out!</button>
+
+          <button type="submit" class="btn">Find out!</button>
       </form>
 
       <div id="result">
-
+        <ul></ul>
       </div>
     </div>
   </body>
