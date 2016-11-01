@@ -1,4 +1,25 @@
 .jumbotron {
+  background-color: white;
+  color: #00008B;
+  margin-top: 15px;
+}
+
+img {
+ height: 300px;
+ width: 400px;
+}
+
+ #row2 {
+   margin-top: 25px;
+   margin-bottom: 15px;
+ }
+
+body {
   background-color: #DC143C;
   color: #00008B;
+
+}
+
+.btn {
+  background-color: white;
 }

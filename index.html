@@ -12,22 +12,31 @@
       <div class="jumbotron">
       <h1>Bounce, Bounce, Bounce!</h1>
       </div>
-      <h2>Here's how it works:</h2>
-      <ul>
-        <li>Numbers divisible by 3 are replaced with "Ping"</li>
-        <li>Numbers divisible by 5 are replaced with "Pong"</li>
-        <li>Numbers divisible by 15 are replaced with "Ping-Pong"</li>
-      </ul>
-      <form id="value">
-
-          <label for="userInput">Enter a number to see!</label>
-          <input id="userInput" type="number" class="form-control">
-          <br></br>
-          <button type="submit" class="btn">Find out!</button>
-      </form>
-
-      <div id="userOutput">
-        <ul></ul>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Here's how it works:</h2>
+          <ul>
+            <li>Numbers divisible by 3 are replaced with "Ping"</li>
+            <li>Numbers divisible by 5 are replaced with "Pong"</li>
+            <li>Numbers divisible by 15 are replaced with "Ping-Pong"</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="img/pong.jpg" alt="man getting hit with a ping-pong ball" />
+        </div>
+      </div>
+      <div class="row" id="row2">
+        <div class="col-md-6">
+          <form id="value">
+            <label for="userInput">Enter a number to see!</label>
+            <input id="userInput" type="number" class="form-control">
+            <br></br>
+            <button type="submit" class="btn">Find out!</button>
+          </form>
+        </div>
+        <div class="col-md-6" id="userOutput">
+          <ul></ul>
+        </div>
       </div>
     </div>
   </body>
