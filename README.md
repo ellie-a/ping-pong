@@ -6,13 +6,13 @@
 
 ## Description
 
-_The application takes the users input of a number on the scale of 1 and up, and decides if a number is equivalent to Ping!, Pong!, or Ping-Pong!, and replaces it with such answer. Ping! is if the number is divisible by 3, Pong! is if the number is divisible by 5, and Ping-Pong! if the number is divisible by 15. _
+_The application takes the users input of a number on the scale of 1 and up, and decides if a number is equivalent to Ping!, Pong!, or Ping-Pong!, and replaces it with such answer. Ping! is if the number is divisible by 3, Pong! is if the number is divisible by 5, and Ping-Pong! if the number is divisible by 15._
 
 ## Setup/Installation Requirements
 
 * _Use the github url to clone to desktop (git clone https://ellie-a.github.io/ping-pong/)_
-* _go into file and open index_
-* _play_
+* _Go into file and open index_
+* _Play_
 
 ## Specifications
 * _The program can count to the given number_
