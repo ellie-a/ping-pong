@@ -7,7 +7,7 @@ var game = function(number) {
       pingPong.push("Ping");
     } else if (i % 5 === 0 && i & 3 !== 0) {
       pingPong.push("Pong");
-    } else if (i % 15 === 0 & i !== 0) {
+    } else if (i % 15 === 0 && i !== 0) {
       pingPong.push("Ping-Pong");
     } else {
       pingPong.push(i);
@@ -28,7 +28,7 @@ $(document).ready(function() {
     var results = game(userInput);
 
     results.forEach(function(result) {
-      $("#userOutput ul").append("<li>" + results + "</li>")
+      $("#userOutput ul").append("<li>" + result + "</li>")
     });
 
   });
